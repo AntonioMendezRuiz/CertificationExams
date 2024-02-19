@@ -74,8 +74,14 @@ export default class ExamPage extends LightningElement {
 
         this.correctResponses.forEach((value, key) => {
             this.userResponses.forEach((v, k) => {
+                const correctResponses = value.split('');
+                const userResponses = v.split('');
+                correctResponses.sort();
+                userResponses.sort();
+                const sortedResponses = correctResponses.join('');
+                const sortedUserResponses = userResponses.join('');
                 if(key == k){
-                    if(value == v){
+                    if(sortedResponses == sortedUserResponses){ 
                         this.checkedExam.set(key, "Success");
                     }else{
                         this.checkedExam.set(key, "Failed")

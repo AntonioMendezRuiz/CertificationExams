@@ -96,6 +96,7 @@
 .submit-button {
     display: flex;
     flex-wrap: wrap;
+    color: white;
     justify-content: center; 
     margin: 4vh;
 }

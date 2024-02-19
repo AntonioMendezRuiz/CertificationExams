@@ -1,0 +1,612 @@
+[
+    {
+      "question": "Where can the multilingual solution search feature be enabled? Choose 2 answers",
+      "options": {
+        "A": "Public Knowledge Base",
+        "B": "Salesforce Content",
+        "C": "Solution tab search",
+        "D": "Self-service portal"
+      },
+      "correct_answer": "AD"
+    },
+    {
+      "question": "What is an option when customizing a report? Choose 3 answers",
+      "options": {
+        "A": "Add a gauge component",
+        "B": "Summarize fields",
+        "C": "Add a grouping",
+        "D": "Schedule a refresh time",
+        "E": "Add a filter"
+      },
+      "correct_answer": "BCE"
+    },
+    {
+      "question": "What is the purpose of Customer Communities? Choose 2 answers",
+      "options": {
+        "A": "To provide Web self-service by exposing Knowledge articles",
+        "B": "To allow partners to access contact records for case collaboration",
+        "C": "To share support reports and dashboards with high-profile accounts",
+        "D": "To allow customers to log and check the status of cases online"
+      },
+      "correct_answer": "AD"
+    },
+    {
+      "question": "What item appears in a user’s My Unresolved Items after synchronization using Salesforce for Outlook? Choose 2 answers",
+      "options": {
+        "A": "Notes not associated to a record",
+        "B": "Cases not assigned to a contact",
+        "C": "Contacts not assigned to an account",
+        "D": "Emails not associated to a record"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "What should be considered when configuring the lead conversion process? Choose 2 answers",
+      "options": {
+        "A": "Custom lead fields can be mapped to custom object fields",
+        "B": "Standard lead fields are automatically converted to account, contact, and opportunity fields.",
+        "C": "Custom lead fields can be mapped to account, contact, and opportunity fields.",
+        "D": "Roll-up summary lead fields can be mapped to custom contact fields."
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "The support team at Universal Containers wants to be more proactive about renewing support. They would like the support representative dedicated to each account to be notified a month before the support plan expires. What should an administrator configure to meet this requirement?",
+      "options": {
+        "A": "Workflow rule",
+        "B": "Auto-response rule",
+        "C": "Assignment rule",
+        "D": "Escalation rule"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "question": "When the multiple currencies feature is enabled, which currency is used as the basis for exchange rate?",
+      "options": {
+        "A": "Record currency",
+        "B": "Corporate currency",
+        "C": "Personal currency",
+        "D": "Active currency"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "Which setting can a system administrator enable in the Salesforce user interface? Choose 2 answers",
+      "options": {
+        "A": "Customizable recent tags",
+        "B": "Related list hover links",
+        "C": "Chatter Messenger for specific users",
+        "D": "Printable list views"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "How can users access Salesforce from their mobile devices? Choose 2 answers",
+      "options": {
+        "A": "Install Salesforce Connect for mobile",
+        "B": "Use web browser on a mobile device",
+        "C": "Use the downloadable Salesforce1 mobile application",
+        "D": "Install the Salesforce1 mobile configuration"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "A user profile has login hour restrictions set to Monday through Friday, 8:00 a.m. to 5:00 p.m. The user has logged in at 4:30 p.m. on a Tuesday and it is now 5:01 p.m. What behaviour of the application should the user expect?",
+      "options": {
+        "A": "The user will be able to continue working, but will be unable to start any new session",
+        "B": "The user will be logged out and any unsaved work-in-process will be saved.",
+        "C": "The user will be logged out and any unsaved work-in-process will be lost.",
+        "D": "The user will be able to continue working and start new sessions"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "question": "Universal Containers has a marketing team set up as a public group. A sales representative would like to engage marketing team on one opportunity. What should the sales representative do to ensure the marketing team can access the opportunity?",
+      "options": {
+        "A": "Change the opportunity owner to the public group",
+        "B": "Add the public group to the opportunity team",
+        "C": "Manually share the record with the public group",
+        "D": "Add the public group to an opportunity queue"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "What user interface setting must be enabled for users to edit records in a list view? Choose 2 answers",
+      "options": {
+        "A": "Enhanced page layout editor",
+        "B": "Inline editing",
+        "C": "Enhanced lists",
+        "D": "Enhanced profile list views"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "An opportunity record, created with a close date of July 30, meets the criteria of a time-dependent workflow rule. The time-dependent action is scheduled for July 23. What happens if the opportunity is edited before July 23 and no longer meets the criteria?",
+      "options": {
+        "A": "The time-dependent action will execute on July 30",
+        "B": "The time-dependent action will execute on July 23",
+        "C": "The time-dependent action is put on hold",
+        "D": "The time-dependent action is automatically removed from the queue."
+      },
+      "correct_answer": "D"
+    },
+    {
+      "question": "What is a method for adding content to Salesforce CRM Content? Choose 2 answers",
+      "options": {
+        "A": "Attachments",
+        "B": "Libraries",
+        "C": "Documents",
+        "D": "Chatter files"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "What does a page layout allow an administrator to control?",
+      "options": {
+        "A": "The business process and related picklist values displayed",
+        "B": "The record types available to each role and profile",
+        "C": "The field users see on detail and edit pages",
+        "D": "The fields users see in reports and list views"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "The marketing team at Universal Containers wants to send an email to each lead received from its website. The country of the incoming lead should determine the language of the email that will be sent to the lead. How can a system administrator automate this process?",
+      "options": {
+        "A": "Create an email template for each language and an assignment rule to send the appropriate template",
+        "B": "Create a single email template and use the translation workbench to translate and send the appropriate template",
+        "C": "Create an email template for each language and an auto-response rule to send the appropriate template",
+        "D": "Create an email template for each language and a workflow alert to send the appropriate template."
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "Which is a feature of Chatter? Choose 3 answers",
+      "options": {
+        "A": "Events",
+        "B": "Bookmarks",
+        "C": "Recommendations",
+        "D": "Feeds",
+        "E": "Notes"
+      },
+      "correct_answer": "BCD"
+    },
+    {
+      "question": "What level of access can be set when sharing a document folder with users? Choose 2 answers",
+      "options": {
+        "A": "Read-only",
+        "B": "Read/Write/Create/Delete",
+        "C": "Read/Write",
+        "D": "Read/Write/Create"
+      },
+      "correct_answer": "AC"
+    },
+    {
+      "question": "Which feature license can be assigned to a user record in Salesforce? Choose 2 answers",
+      "options": {
+        "A": "Opportunity User",
+        "B": "Knowledge User",
+        "C": "Service Cloud User",
+        "D": "Console User"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "How can Knowledge articles be used? Choose 2 answers",
+      "options": {
+        "A": "To display Salesforce Solutions",
+        "B": "To display Salesforce Answers",
+        "C": "To display for customer self-service",
+        "D": "To resolve customer cases"
+      },
+      "correct_answer": "CD"
+    },
+    {
+      "question": "What option is available when scheduling a dashboard refresh? Choose 2 answers",
+      "options": {
+        "A": "Send a refresh notification to users with access to the dashboard",
+        "B": "View and remove a scheduled dashboard refresh",
+        "C": "Schedule the dashboard to refresh in different time zones",
+        "D": "Define refresh times for specific dashboard components"
+      },
+      "correct_answer": "AB"
+    },
+    {
+      "question": "What is the purpose of the Ideas community? Choose 2 answers",
+      "options": {
+        "A": "To provide access to articles that answer questions around an idea theme",
+        "B": "To comment on and vote for ideas posted by other community members",
+        "C": "To posts customer ideas by logging cases on the Ideas tab of the portal",
+        "D": "To invite customers, partners, and employees to submit ideas around a theme"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "Which circumstance will prevent a system administrator from deleting a custom field?",
+      "options": {
+        "A": "The field is used in a page layout",
+        "B": "The field is used in a workflow field update",
+        "C": "The field is used in a report",
+        "D": "The field is part of a field dependency"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "Universal Containers requires that the organization-wide default for opportunities set to public read/write. However, sales users are complaining that opportunity reports return too many results, making it difficult to find their team’s opportunities in the report result. How can the system administrator address this problem?",
+      "options": {
+        "A": "Update the sharing rules to limit user access to certain opportunities",
+        "B": "Move the opportunity report into a folder with restricted access",
+        "C": "Move the opportunity reports into each user’s personal report folder",
+        "D": "Use the Show filter to filter report results and reduce records returned"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "question": "When can a validation rule be used to prevent invalid data? Choose 3 Answers",
+      "options": {
+        "A": "When records are deleted by a user",
+        "B": "When records are imported",
+        "C": "When records are submitted using web-to-lead",
+        "D": "When records are updated by a workflow rule",
+        "E": "When records are edited by a user"
+      },
+      "correct_answer": "BDE"
+    },
+    {
+      "question": "What should an administrator consider when configuring workflow rules? Choose 2 answers",
+      "options": {
+        "A": "Rules must be deactivated before using an import wizard",
+        "B": "All existing records are evaluated when a new rule is activated",
+        "C": "Rule actions can take place immediately or on a specific date",
+        "D": "Rules can be evaluated when records are created or edited"
+      },
+      "correct_answer": "CD"
+    },
+    {
+      "question": "What feature allows a user to group campaigns within a specific marketing program or initiative?",
+      "options": {
+        "A": "Campaign influence",
+        "B": "Campaign lists",
+        "C": "Campaign members",
+        "D": "Campaign hierarchy"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "question": "Which chart type can be used to display summary values from two different levels of grouping in a report? Choose 2 answers",
+      "options": {
+        "A": "Donut Chart",
+        "B": "Stacked bar chart",
+        "C": "Grouped line chart",
+        "D": "Funnel chart"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "Universal Containers set the organization-wide defaults for cases to private. When a case is escalated, case ownership changes to a Tier 2 support agent. How can a system administrator give the sale operations team read/write access to all escalated cases?",
+      "options": {
+        "A": "Create a criteria-based sharing rule",
+        "B": "Create a case assignment rule",
+        "C": "Create an ownership-based sharing rule",
+        "D": "Create a case escalation rule"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "Which statement about products and price books is true? Choose 2 answers",
+      "options": {
+        "A": "The standard and list price for a product can be listed in multiple currencies",
+        "B": "Price books that contain assets cannot contain products",
+        "C": "A product can have a different list price in different price books",
+        "D": "Products without a price are automatically added to the standard price book"
+      },
+      "correct_answer": "AC"
+    },
+    {
+      "question": "What type of record access can an Administrator grant through sharing rules? Choose 2 answers",
+      "options": {
+        "A": "Read/Write/Transfer",
+        "B": "Read Only",
+        "C": "Read/Write/Delete",
+        "D": "Read/Write"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "Which option is available when using the process visualizer? Choose 2 answers",
+      "options": {
+        "A": "Add approval steps from the process visualizer",
+        "B": "View approval processes as a flow chart",
+        "C": "Share the annotated approval process diagrams",
+        "D": "Edit the criteria used to trigger the approval process"
+      },
+      "correct_answer": "BC"
+    },
+    {
+      "question": "A user is having trouble logging into Salesforce. The user’s login history shows that this person has attempted to log in multiple times and has been locked out of the organization. How can the system administrator help the user log into Salesforce? Choose 2 answers",
+      "options": {
+        "A": "Send an email to the user containing the user’s password",
+        "B": "Log in as the user and enter a new password",
+        "C": "Click Reset Password on the user’s record detail page",
+        "D": "Click Unlock on the user’s record detail page"
+      },
+      "correct_answer": "CD"
+    },
+    {
+      "question": "Which dashboard component can display data from the summary rows of a report? Choose 2 answers",
+      "options": {
+        "A": "Metric",
+        "B": "Table",
+        "C": "Gauge",
+        "D": "Chart"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "A marketing user needs to create a new campaign, but the New button is NOT visible from the campaign home page. The system administrator has verified that the user has the “Create” profile permission for the campaign object. How should the system administrator resolve the issue?",
+      "options": {
+        "A": "Select the marketing User checkbox in the user record",
+        "B": "Add the New button to the page layout using the page layout editor",
+        "C": "Select the “Manage Campaigns” profile permission",
+        "D": "Grant the user “Read” profile permission for the campaign object"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "question": "Universal Containers uses a custom field on the account object to capture the account credit status. The sales team wants to display the account credit status on opportunities. Which feature should a system administrator use to meet this requirement?",
+      "options": {
+        "A": "Cross-object formula field",
+        "B": "Workflow field update",
+        "C": "Lookup field",
+        "D": "Roll-up summary field"
+      },
+      "correct_answer": "A"
+    },
+    {
+      "question": "Universal Containers has two business groups, Product and Services. Both groups will be using opportunities to track deals, but different fields are required by each group How should a system administrator meet this requirement? Choose 2 answers",
+      "options": {
+        "A": "Create two sales processes",
+        "B": "Create two page layouts",
+        "C": "Create two permission sets",
+        "D": "Create two record types"
+      },
+      "correct_answer": "BD"
+    },
+    {
+      "question": "Universal Containers wants to create a custom object to capture account survey data. Users must be able to select an account from the survey record. Users also need the ability to view related surveys on the account record. How should the system administrator meet these requirements? Choose 2 answers",
+      "options": {
+        "A": "Create a lookup relationship field on the account object",
+        "B": "Add the account related list to the survey page layout",
+        "C": "Add the survey related list to the account page layout",
+        "D": "Create a lookup relationship field on the survey object"
+      },
+      "correct_answer": "CD"
+    },
+    {
+      "question": "How can a system administrator restrict users from viewing certain fields in list views, searches, page layouts and reports?",
+      "options": {
+        "A": "Remove the field from reports and list views",
+        "B": "Set the field to hidden using field-level security",
+        "C": "Remove the field from page layout",
+        "D": "Set the field to hidden on the user role"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "What can be modified on standard object fields? Choose 3 answers",
+      "options": {
+        "A": "Label",
+        "B": "Field type",
+        "C": "Picklist values",
+        "D": "Help text",
+        "E": "Default text"
+      },
+      "correct_answer": "ACD"
+    },
+    {
+      "question": "If two objects have a parent-child relationship, how can a user access the child record from the parent record?",
+      "options": {
+        "A": "Child field",
+        "B": "Lookup field",
+        "C": "Related list",
+        "D": "Custom link"
+      },
+      "correct_answer": "C"
+    },
+    {
+      "question": "What relationship can be selected in a custom report type where Accounts is the primary object and Contacts is the related object?",
+      "options": {
+        "A": "Each contact must have a related account",
+        "B": "Each account must not have related contacts",
+        "C": "Each contact may or may not have a related account",
+        "D": "Each account may or may not have related contacts"
+      },
+      "correct_answer": "D"
+    },
+    {
+      "question": "Universal Containers currently assigns its users from the facilities and IT team to the same profile. Universal Containers recently created a custom object to track company cars and wants only users from the facilities team to have access to this new object. How can administrator meet this requirement?",
+      "options": {
+        "A": "Modify the standard profile currently shared by both teams",
+        "B": "Create a custom profile for users on the facilities team",
+        "C": "Configure field-level security on the new object for the facilities team",
+        "D": "Assign the facilities team to a new role in the role hierarchy"
+      },
+      "correct_answer": "B"
+    },
+    {
+      "question": "Universal Containers uses a private sharing model for opportunities. The sales team wants sales engineers to be involved in specific opportunities to help sales representatives close deals faster. How can an administrator meet this request?",
+      "options": {
+        "A": "Add Chatter groups to opportunities",
+        "B": "Add Sales engineers to accounts teams",
+        "C": "Add sales engineers to opportunity teams",
+        "D": "Add Sales engineers to opportunity contact roles"
+      },
+      "correct_answer": "C"
+    },
+    {
+        "question": "A marketing user has received a file of leads to import in Salesforce. What tool can be used to avoid duplicate lead records?",
+        "options": {
+          "A": "Data loader",
+          "B": "Merge leads function",
+          "C": "Import wizard",
+          "D": "Validation rules"
+        },
+        "correct_answer": "C"
+      },
+      {
+        "question": "Sales representatives at Universal Containers should not be able to create leads, delete their own accounts, or send mass emails. How can an administrator meet these requirements?",
+        "options": {
+          "A": "Create a sharing rule",
+          "B": "Modify a standard profile",
+          "C": "Change the organization-wide default settings",
+          "D": "Create a custom profile"
+        },
+        "correct_answer": "D"
+      },
+      {
+        "question": "The VP of Sales at Universal Containers requested that “Verbal Agreement” be added as a new opportunity stage. The administrator added this new picklist value to the stage field, but found that the new value was not available to users. What should the administrator do?",
+        "options": {
+          "A": "Ensure the new value was marked as active",
+          "B": "Ensure the limit of 10 stage values was not exceeded",
+          "C": "Add the new value to the appropriate sales process",
+          "D": "Add the new value to the appropriate record type"
+        },
+        "correct_answer": "C"
+      },
+      {
+        "question": "When importing data, what happens if some records do NOT meet the data validation criteria?",
+        "options": {
+          "A": "Import process fails only for the records with invalid data",
+          "B": "Import process requires user authorization to import the invalid records",
+          "C": "Import process aborts when it encounters the first invalid record",
+          "D": "Import process ignores the data validation criteria"
+        },
+        "correct_answer": "A"
+      },
+      {
+        "question": "What is the purpose of the AppExchange? Choose 2 answers",
+        "options": {
+          "A": "Support users can install the Salesforce Console for Service custom app",
+          "B": "Customers can share and install apps published by Salesforce partners",
+          "C": "Partners can download accounts and contacts to collaborate on sales deals",
+          "D": "Administrators can download and customize pre-built dashboards and reports"
+        },
+        "correct_answer": "BD"
+      },
+      {
+        "question": "Universal Containers wants to ensure that users complete the standard Industry field when creating a new account record. To address this concern, the administrator set the industry field as required. However, some users are still able to create a new account record without completing the Industry field. What should an administrator do to troubleshoot the issue? Choose 2 answers",
+        "options": {
+          "A": "Verify the field-level security for the Industry field is not set to “Read Only” on the users’ profiles",
+          "B": "Verify the users have the “Modify all Data” permission for accounts on their profiles",
+          "C": "Verify the users have the “Edit” permission for accounts on their profiles",
+          "D": "Verify the industry field is set as required on all the account page layouts assigned to the users’"
+        },
+        "correct_answer": "AD"
+      },
+      {
+        "question": "When case assignment rules are being set up, cases can be assigned to whom? Choose 2 answers",
+        "options": {
+          "A": "User",
+          "B": "Case team",
+          "C": "Queue",
+          "D": "Contac"
+        },
+        "correct_answer": "AC"
+      },
+      {
+        "question": "The support group at Universal Containers wants agents to capture different information for product support and inquiry cases. In addition, the lifecycle for product support cases should have more steps than the lifecycle for inquiry cases. What feature should an administrator use to meet these requirements? Choose 3 answers",
+        "options": {
+          "A": "Page layouts",
+          "B": "Field-level security",
+          "C": "Record types",
+          "D": "Permission sets",
+          "E": "Support processes"
+        },
+        "correct_answer": "ACE"
+      },
+      {
+        "question": "What setting is controlled by a user’s profile? Choose 3 answers",
+        "options": {
+          "A": "Feature license assignment",
+          "B": "Field-level security",
+          "C": "Assigned apps",
+          "D": "Locale settings",
+          "E": "Record type assignment"
+        },
+        "correct_answer": "BCE"
+      },
+      {
+        "question": "What type of customization can be done on Activities (tasks and events)? Choose 3 answers",
+        "options": {
+          "A": "Validation Rules",
+          "B": "Workflow Rules",
+          "C": "Custom Fields",
+          "D": "Field Tracking",
+          "E": "Assignment Rule"
+        },
+        "correct_answer": "ABC"
+      },
+      {
+        "question": "A system administrator at Universal Containers created a new account record type. However, sales users are unable to select the new record type when creating new account records. What is a possible reason for this? Choose 2 answers",
+        "options": {
+          "A": "The record type does not have an associated page layout",
+          "B": "The record type has not been activated",
+          "C": "The record type has not been added to the sales user profile",
+          "D": "The record types has not been set as the default record type"
+        },
+        "correct_answer": "BC"
+      },
+      {
+        "question": "Universal Containers uses web-to-case to convert support requests submitted through its website into cases. The support team would like Salesforce to automatically send an email containing password reset instructions to the customer when the case subject contains the words “forgot” and “password”. What does the administrator need to configure to meet this requirement?",
+        "options": {
+          "A": "Validation rule",
+          "B": "Auto-response rule",
+          "C": "Email-to-case",
+          "D": "Support settings"
+        },
+        "correct_answer": "B"
+      },
+      {
+        "question": "What standard object has a one-to-many relationship with the account object? Choose 3 answers",
+        "options": {
+          "A": "Contact",
+          "B": "Lead",
+          "C": "Opportunity",
+          "D": "Campaign",
+          "E": "Case"
+        },
+        "correct_answer": "ACE"
+      },
+      {
+        "question": "When using sharing rules, what can records be shared with? Choose 2 answers",
+        "options": {
+          "A": "Queues",
+          "B": "Public groups",
+          "C": "Roles and subordinates",
+          "D": "Profiles"
+        },
+        "correct_answer": "BC"
+      },
+      {
+        "question": "Universal Containers wants to automatically back up all Salesforce data on a monthly basis. Which tool can a system administrator use to meet this requirement?",
+        "options": {
+          "A": "Data export service",
+          "B": "Reporting snapshot",
+          "C": "Import wizard",
+          "D": "Scheduled report"
+        },
+        "correct_answer": "A"
+      },
+      {
+        "question": "What can be transferred from one user to another user during a mass transfer of account records? Choose 3 answers",
+        "options": {
+          "A": "Open cases",
+          "B": "Open activities",
+          "C": "Closed activities",
+          "D": "Related custom object records",
+          "E": "Closed cases"
+        },
+        "correct_answer": "ABE"
+      }
+  ]
+  
