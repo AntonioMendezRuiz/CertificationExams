@@ -1,0 +1,149 @@
+<apex:page controller="LoginPageController" showHeader="false" sidebar="false">
+    <apex:includeLightning />    
+    <html>
+        <head>
+            <script>
+                $Lightning.use("c:MainPageApp", function() {
+                    $Lightning.createComponent("c:mainPage",
+                    {
+                        note   : 'I am coming from VF Page', 
+                        recordId : '{!$CurrentPage.parameters.id}'
+                    },
+                    "LwcId", 
+                    function(cmp) {
+                        console.log('Calling the LWC Component');
+                    });
+                });
+            </script>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 100vh;
+                }
+                .login-container {
+                    position: absolute; 
+                    left: 0; 
+                    right: 0; 
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    background-color: #ffffff;
+                    border-radius: 5px;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    padding: 20px;
+                    max-width: 400px;
+                    width: 100%;
+                }
+                .login-container h2 {
+                    text-align: center;
+                    margin-bottom: 20px;
+                }
+                .login-container .form-group {
+                    margin-bottom: 15px;
+                }
+                .login-container label {
+                    display: block;
+                    font-weight: bold;
+                    margin-bottom: 5px;
+                }
+                .login-container input[type="text"],
+                .login-container input[type="password"] {
+                    width: 95%;
+                    padding: 10px;
+                    border-radius: 3px;
+                    border: 1px solid #ccc;
+                }
+                .login-container input[type="button"] {
+                    width: 100%;
+                    padding: 10px;
+                    border-radius: 3px;
+                    background-color: #0070d2;
+                    color: #fff;
+                    border: none;
+                    cursor: pointer;
+                    font-size: 16px;
+                }
+                .login-container input[type="button"]:hover {
+                    background-color: #0059b3;
+                }
+                #LwcId {
+                    position: absolute; 
+                    top: 0;
+                    left: 0; 
+                    right: 0; 
+                    margin-left: auto; 
+                    margin-right: auto; 
+                }
+                .loader {
+                    position: absolute; 
+                    left: 0; 
+                    right: 0; 
+                    margin-left: auto; 
+                    margin-right: auto; 
+                    border: 16px solid #f3f3f3; /* Light grey */
+                    border-top: 16px solid #3498db; /* Blue */
+                    border-radius: 50%;
+                    width: 120px;
+                    height: 120px;
+                    animation: spin 2s linear infinite;
+                }
+
+                @keyframes spin {
+                    0% { transform: rotate(0deg); }
+                    100% { transform: rotate(360deg); }
+                }
+            </style>
+        </head>
+        <body>
+            <div class="login-container" id="loginDiv">
+                <apex:form>
+                    <div class="form-group">
+                        <label for="username">Username:</label>
+                        <apex:inputtext id="username" value="{!username}"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password:</label>
+                        <apex:inputtext id="password" value="{!password}"/>
+                    </div>
+                    <input type="button" value="Login" onclick="login()"/>
+                    <apex:actionfunction name="isLogin"  action="{!login}" reRender="frm"/>
+                </apex:form>
+            </div>
+            <div class="loader" id="loader" style = "visibility: hidden"></div>
+            <div id="LwcId" style = "visibility: hidden">
+            </div>
+            <script>
+                function login() {
+                    document.getElementById("loginDiv").style.visibility = "hidden";
+                    let isTrue  = isLogin();
+                    document.getElementById("loader").style.visibility = "visible";
+                    if (isTrue) {
+                        document.getElementById("loader").style.visibility = "hidden";
+                        document.getElementById("LwcId").style.visibility = "visible";
+                    } else {
+                        setTimeout(function(){
+                            document.getElementById("loader").style.visibility = "visible";
+                        }, 2000);
+                        document.getElementById("loader").style.visibility = "hidden";
+                        document.getElementById("loginDiv").style.visibility = "visible";                    
+                    }
+                    
+                }
+
+                function validateEmail(email){
+                    var validRegex = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+                    /*if (!email.value.match(validRegex)) {
+
+                    }else{
+
+                    }*/
+                }
+            </script>   
+        </body>
+    </html>
+</apex:page>

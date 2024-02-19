@@ -1,0 +1,63 @@
+<template>
+    
+    <template if:true={certTemaplate}>
+        <lightning-card title="Certifications">
+            <div class="container">
+                <template for:each={certs} for:item="item">
+                    <button key={item.Id} data-id={item.Id} data-key={item.Id} class="item" onclick={handleItemClick}>{item.Name}</button>
+                </template>
+            </div>
+        </lightning-card>
+        <lightning-card if:true={chooseNumber}>
+            <div class="container">
+                <button class="typeExam" onclick={chooseExamQuestion} value="15">Short exam (15 questions)</button>
+                <button class="typeExam" onclick={chooseExamQuestion} value="40">Medium exam (40 questions)</button>
+                <button class="typeExam" onclick={chooseExamQuestion} value="70">Long exam (70 questions)</button>
+            </div>
+        </lightning-card>
+        <lightning-card if:true={canStart}>
+            <div class="container">
+                <button class="item" onclick={startExam}>Let's go!</button>
+            </div>
+        </lightning-card>
+    </template>
+        
+    <template if:true={examStart}>
+        <lightning-card if:true={examStart}>
+            <div class="container-exam-result" if:true={examIsFinished}>
+                <p>Exam result: {successPercent} %</p>
+            </div>
+            <div class="container-reload">
+                <button class="reload" onclick={reload}>Reload</button>
+            </div>
+        </lightning-card>
+        <lightning-card class="exam-container" title="Exam" icon-name="standard:contract">
+            <template for:each={questions} for:item="question">
+                <div class="question-item" data-id={question.Id} title=Question key={question.Id}>
+                    <p class="question-text">{question.Question__c}</p>
+                    <template if:true={question.Answer_A__c}>
+                        <lightning-input class="slds-radio" type="checkbox" data-id={question.Id} name={question.Id} label={question.Answer_A__c} value=A onchange={handleOptionclick}></lightning-input>
+                    </template>
+                    <template if:true={question.Answer_B__c}>
+                        <lightning-input class="slds-radio" type="checkbox" data-id={question.Id} name={question.Id} label={question.Answer_B__c} value=B onchange={handleOptionclick}></lightning-input>
+                    </template>
+                    <template if:true={question.Answer_C__c}>
+                        <lightning-input class="slds-radio" type="checkbox" data-id={question.Id} name={question.Id} label={question.Answer_C__c} value=C onchange={handleOptionclick}></lightning-input>
+                    </template>
+                    <template if:true={question.Answer_D__c}>
+                        <lightning-input class="slds-radio" type="checkbox" data-id={question.Id} name={question.Id} label={question.Answer_D__c} value=D onchange={handleOptionclick}></lightning-input>
+                    </template>
+                    <template if:true={question.Answer_E__c}>
+                        <lightning-input class="slds-radio" type="checkbox" data-id={question.Id} name={question.Id} label={question.Answer_E__c} value=E onchange={handleOptionclick}></lightning-input>
+                    </template>
+                    <lightning-card class="slds-m-top_medium" if:true={correctResponsesQuestions}>
+                        <p class="question-text">Respuesta correcta: {question.Correct_Answer__c}</p>
+                    </lightning-card>
+                </div>
+            </template>
+        </lightning-card>
+        <lightning-card class="slds-m-top_medium" if:true={finishExam}>
+            <lightning-button class="submit-button" variant="brand" label="Submit" onclick={checkResponses}></lightning-button>
+        </lightning-card>
+    </template>
+</template>
